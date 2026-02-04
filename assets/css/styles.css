@@ -354,6 +354,8 @@ a:hover {
 .nav__mobile.active {
   opacity: 1;
   visibility: visible;
+  background: #000000;
+
 }
 
 .nav__mobile .nav__link {
