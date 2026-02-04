@@ -1,200 +1,468 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Northeastern Competitive Climbing Team</title>
-  <meta name="description" content="Northeastern Climbing Team — competition-driven, community-built." />
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/css/styles.css?v=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Northeastern Climbing Team - The official competitive rock climbing team at Northeastern University. Competition-driven, community-built since 2014.">
+  <meta name="keywords" content="Northeastern, climbing, rock climbing, competitive climbing, Boston, USA Climbing, collegiate climbing">
+  <meta name="author" content="Northeastern Climbing Team">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Northeastern Climbing Team">
+  <meta property="og:description" content="The official competitive rock climbing team at Northeastern University. Competition-driven, community-built.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  
+  <title>Northeastern Climbing Team | Competition-Driven, Community-Built</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  
+  <!-- Preload critical assets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
+  <!-- Page Loader -->
+  <div class="page-loader">
+    <div class="page-loader__spinner"></div>
+  </div>
 
-<header class="nav" id="top">
-  <div class="wrap nav__inner">
-    <div class="nav__left">
-      <a class="nav__brand" href="#top">Northeastern University Competitive Climbing Team</a>
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">
+        <span class="nav__brand-logo">NC</span>
+        <span>NU Climbing</span>
+      </a>
+      
+      <nav class="nav__menu">
+        <a href="index.html" class="nav__link active">Home</a>
+        <a href="pages/about.html" class="nav__link">About</a>
+        <a href="pages/members.html" class="nav__link">Members</a>
+        <a href="pages/results.html" class="nav__link">Results</a>
+        <a href="pages/sponsors.html" class="nav__link">Sponsors</a>
+        <a href="pages/tryouts.html" class="nav__link nav__cta">Tryouts</a>
+      </nav>
+      
+      <button class="nav__toggle" aria-label="Toggle menu">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
     </div>
-
-    <nav class="nav__right" aria-label="Primary">
-      <a href="#about">About</a>
-      <a href="#sponsors">Sponsors</a>
-      <a href="#members">Members</a>
-      <a href="#tryouts">Tryouts</a>
+    
+    <!-- Mobile Menu -->
+    <nav class="nav__mobile">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="pages/about.html" class="nav__link">About</a>
+      <a href="pages/members.html" class="nav__link">Members</a>
+      <a href="pages/results.html" class="nav__link">Results</a>
+      <a href="pages/sponsors.html" class="nav__link">Sponsors</a>
+      <a href="pages/faq.html" class="nav__link">FAQ</a>
+      <a href="pages/contact.html" class="nav__link">Contact</a>
+      <a href="pages/tryouts.html" class="nav__link nav__cta">Tryouts</a>
     </nav>
+  </header>
 
-    <button class="nav__burger" type="button" aria-label="Open menu" aria-expanded="false" data-burger>
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-
-  <div class="drawer" data-drawer hidden>
-    <div class="wrap drawer__inner">
-      <a href="#about">About</a>
-      <a href="#sponsors">Sponsors</a>
-      <a href="#members">Members</a>
-      <a href="#tryouts">Tryouts</a>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero__bg">
+      <img src="https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=1920&q=80" alt="Rock climber ascending" class="hero__bg-image">
+      <div class="hero__bg-overlay"></div>
     </div>
-  </div>
-</header>
-
-<section class="hero" aria-label="Home">
-  <div class="hero__bg" role="img" aria-label="Background image placeholder"></div>
-
-  <div class="wrap hero__center">
-    <div class="hero__logo">
-      <img src="assets/img/logo-placeholder.svg" alt="Logo placeholder">
-    </div>
-
-    <div class="hero__titleBox">
-      <div class="hero__title">Northeastern Climbing Team</div>
-    </div>
-  </div>
-
-  <div class="bar bar--bottom bar--overlay">
-    <div class="wrap bar__inner">
-      <div class="bar__label">Top of next page</div>
-    </div>
-  </div>
-</section>
-
-<section id="about" class="page page--white">
-  <div class="bar bar--top">
-    <div class="wrap bar__inner">
-      <div class="bar__title">Home Page 2</div>
-      <div class="bar__hint">bottom of image</div>
-    </div>
-  </div>
-
-  <div class="wrap page__body">
-    <h2 class="page__heading">What is Northeastern Competitive Climbing?</h2>
-
-    <div class="centerLines" aria-hidden="true">
-      <span></span><span></span><span></span><span></span>
-    </div>
-
-    <p class="note">(Centered text — replace with real copy later)</p>
-  </div>
-
-</section>
-
-<section id="sponsors" class="page page--white">
-  <div class="bar bar--top">
-    <div class="wrap bar__inner">
-      <div class="bar__title">Sponsors</div>
-      <div class="bar__hint">TCP bar</div>
-    </div>
-  </div>
-
-  <div class="wrap page__body">
-    <div>
-      <div class="bigCenterBox">
-        <div class="bigCenterBox__title">Sponsors</div>
-        <div class="bigCenterBox__sub">quick words</div>
+    
+    <div class="hero__content">
+      <div class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        USA Climbing Collegiate Series
       </div>
-
-      <p class="note">White background + sponsors centered and 3 to a row (per sketch).</p>
-
-      <div class="sponsorGrid">
-        <a class="sponsorTile" href="#" onclick="return false;">
-          <img src="assets/img/sponsor-placeholder.svg" alt="Sponsor logo placeholder">
+      
+      <h1 class="hero__title">
+        Northeastern
+        <span class="hero__title-accent">Climbing Team</span>
+      </h1>
+      
+      <p class="hero__subtitle">
+        Competition-driven, community-built. The official competitive rock climbing team at Northeastern University since 2014.
+      </p>
+      
+      <div class="hero__actions">
+        <a href="pages/tryouts.html" class="btn btn-primary btn-lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 5v14M5 12h14"/>
+          </svg>
+          Join the Team
         </a>
-        <a class="sponsorTile" href="#" onclick="return false;">
-          <img src="assets/img/sponsor-placeholder.svg" alt="Sponsor logo placeholder">
-        </a>
-        <a class="sponsorTile" href="#" onclick="return false;">
-          <img src="assets/img/sponsor-placeholder.svg" alt="Sponsor logo placeholder">
-        </a>
-        <a class="sponsorTile" href="#" onclick="return false;">
-          <img src="assets/img/sponsor-placeholder.svg" alt="Sponsor logo placeholder">
-        </a>
-        <a class="sponsorTile" href="#" onclick="return false;">
-          <img src="assets/img/sponsor-placeholder.svg" alt="Sponsor logo placeholder">
-        </a>
-        <a class="sponsorTile" href="#" onclick="return false;">
-          <img src="assets/img/sponsor-placeholder.svg" alt="Sponsor logo placeholder">
+        <a href="pages/about.html" class="btn btn-secondary btn-lg">
+          Learn More
         </a>
       </div>
-
-      <div class="contactRow">
-        <span class="pill">@ insta logo + link</span>
-      </div>
     </div>
-  </div>
-
-</section>
-
-<section id="members" class="page page--white">
-  <div class="bar bar--top">
-    <div class="wrap bar__inner">
-      <div class="bar__title">Members</div>
+    
+    <div class="hero__scroll">
+      <span>Scroll to explore</span>
+      <div class="hero__scroll-line"></div>
     </div>
-  </div>
+  </section>
 
-  <div class="wrap page__body">
-    <div class="twoBoxes">
-      <div class="box">
-        <div class="box__title">Members</div>
-        <div class="centerLines centerLines--small" aria-hidden="true">
-          <span></span><span></span><span></span>
+  <!-- Stats Section -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="stats">
+        <div class="stat animate-on-scroll">
+          <div class="stat__number">2014</div>
+          <div class="stat__label">Founded</div>
         </div>
-        <div class="centerLines centerLines--small" aria-hidden="true">
-          <span></span><span></span>
+        <div class="stat animate-on-scroll delay-1">
+          <div class="stat__number">24</div>
+          <div class="stat__label">Team Members</div>
         </div>
-      </div>
-
-      <div class="box">
-        <div class="box__title">Eboard</div>
-        <div class="centerLines centerLines--small" aria-hidden="true">
-          <span></span><span></span><span></span>
+        <div class="stat animate-on-scroll delay-2">
+          <div class="stat__number">10+</div>
+          <div class="stat__label">National Appearances</div>
         </div>
-        <div class="centerLines centerLines--small" aria-hidden="true">
-          <span></span><span></span>
+        <div class="stat animate-on-scroll delay-3">
+          <div class="stat__number">2nd</div>
+          <div class="stat__label">Best National Finish</div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-</section>
-
-<section id="tryouts" class="page page--white">
-  <div class="bar bar--top">
-    <div class="wrap bar__inner">
-      <div class="bar__title">Tryouts</div>
-    </div>
-  </div>
-
-  <div class="wrap page__body">
-    <div class="box box--wide">
-      <div class="box__title">Tryouts information</div>
-      <div class="centerLines" aria-hidden="true">
-        <span></span><span></span><span></span><span></span>
+  <!-- About Preview Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-header__label">Who We Are</span>
+        <h2 class="section-header__title">Competition Meets Community</h2>
+        <p class="section-header__text">
+          The Northeastern Climbing Team is the official competitive rock climbing team sanctioned through Northeastern University Club Sports.
+        </p>
+      </div>
+      
+      <div class="grid grid-3">
+        <div class="feature-box animate-on-scroll delay-1">
+          <div class="feature-box__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3 class="feature-box__title">Elite Training</h3>
+          <p>Train at Central Rock Gym locations across Massachusetts with 3-4 practices per week.</p>
+        </div>
+        
+        <div class="feature-box animate-on-scroll delay-2">
+          <div class="feature-box__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="8" r="7"/>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+            </svg>
+          </div>
+          <h3 class="feature-box__title">National Competition</h3>
+          <p>Compete through USA Climbing's Collegiate Series at local, divisional, and national levels.</p>
+        </div>
+        
+        <div class="feature-box animate-on-scroll delay-3">
+          <div class="feature-box__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3 class="feature-box__title">Strong Community</h3>
+          <p>Join a tight-knit team that gives back through volunteer events and community outreach.</p>
+        </div>
+      </div>
+      
+      <div class="text-center mt-xl">
+        <a href="pages/about.html" class="btn btn-outline">
+          Discover Our Story
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
       </div>
     </div>
-  </div>
+  </section>
 
-</section>
-
-<footer id="contact" class="footer">
-  <div class="wrap footer__inner">
-    <div class="footer__left">
-      <div class="footer__brand">Northeastern Climbing</div>
-      <div class="muted">© <span id="year"></span> • Boston, MA</div>
+  <!-- Mission Section -->
+  <section class="section section-gray">
+    <div class="container container-sm">
+      <div class="text-center animate-on-scroll">
+        <span class="section-header__label">Our Mission</span>
+        <blockquote style="font-family: var(--font-display); font-size: clamp(1.5rem, 4vw, 2.5rem); line-height: 1.3; margin: var(--space-xl) 0; color: var(--nu-gray-800);">
+          "The Northeastern University Club Climbing Team exists to provide resources to and empower climbers of all identities and backgrounds who are interested in the world of competition climbing."
+        </blockquote>
+        <p class="lead">
+          We strive each year to train and perform at the local, regional, national, and international levels, while generating a positive impact on the stewardship of the greater New England climbing community.
+        </p>
+      </div>
     </div>
+  </section>
 
-    <div class="footer__right">
-      <a class="pill" href="#" onclick="alert('Placeholder: Instagram link'); return false;" aria-label="Instagram">
-        <span aria-hidden="true">◎</span> Instagram
-      </a>
-      <a class="pill" href="#" onclick="alert('Placeholder: Email link'); return false;" aria-label="Email">
-        <span aria-hidden="true">✉</span> Email
-      </a>
+  <!-- Recent Results Preview -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-header__label">Competition</span>
+        <h2 class="section-header__title">Recent Results</h2>
+        <p class="section-header__text">
+          Our team continues to excel at every level of competition.
+        </p>
+      </div>
+      
+      <div class="grid grid-2">
+        <div class="result-card animate-on-scroll delay-1">
+          <div class="result-card__year">2024</div>
+          <div class="result-card__event">Nationals - Gilbert, AZ</div>
+          <div class="result-card__details">
+            <strong>Boulder:</strong> 10th Place • <strong>Sport:</strong> 5th Place
+          </div>
+        </div>
+        
+        <div class="result-card animate-on-scroll delay-2">
+          <div class="result-card__year">2024</div>
+          <div class="result-card__event">CNQE 2 - Everett, MA</div>
+          <div class="result-card__details">
+            Multiple 1st place finishes in Boulder & Sport categories
+          </div>
+        </div>
+        
+        <div class="result-card animate-on-scroll delay-3">
+          <div class="result-card__year">2023</div>
+          <div class="result-card__event">Nationals - Colorado Springs, CO</div>
+          <div class="result-card__details">
+            <strong>Boulder:</strong> 9th • <strong>Sport:</strong> 9th • <strong>Speed:</strong> 8th
+          </div>
+        </div>
+        
+        <div class="result-card animate-on-scroll delay-4">
+          <div class="result-card__year">2014</div>
+          <div class="result-card__event">Nationals - Melbourne, FL</div>
+          <div class="result-card__details">
+            <strong>Overall:</strong> 2nd Place (Founding Year!)
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-xl">
+        <a href="pages/results.html" class="btn btn-primary">
+          View All Results
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
     </div>
-  </div>
-</footer>
+  </section>
 
+  <!-- CTA Section -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="info-box animate-on-scroll" style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <h2 class="info-box__title">Ready to Climb?</h2>
+        <p class="info-box__text mb-xl">
+          Tryouts are held at the beginning of each Fall semester (full roster) and Spring semester (limited spots). Open to all Northeastern students including grad students!
+        </p>
+        <div style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap;">
+          <a href="pages/tryouts.html" class="btn btn-secondary btn-lg">
+            Tryout Information
+          </a>
+          <a href="pages/faq.html" class="btn btn-gold btn-lg">
+            Read the FAQ
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-<script src="assets/js/main.js?v=1" defer></script>
+  <!-- Sponsors Preview -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-header__label">Partners</span>
+        <h2 class="section-header__title">Our Sponsors</h2>
+        <p class="section-header__text">
+          We're grateful for the support of our amazing sponsors who help make our success possible.
+        </p>
+      </div>
+      
+      <div class="grid grid-4 mb-xl">
+        <div class="sponsor-card animate-on-scroll delay-1">
+          <img src="https://via.placeholder.com/200x100/f8f9fa/adb5bd?text=Sponsor+1" alt="Sponsor">
+        </div>
+        <div class="sponsor-card animate-on-scroll delay-2">
+          <img src="https://via.placeholder.com/200x100/f8f9fa/adb5bd?text=Sponsor+2" alt="Sponsor">
+        </div>
+        <div class="sponsor-card animate-on-scroll delay-3">
+          <img src="https://via.placeholder.com/200x100/f8f9fa/adb5bd?text=Sponsor+3" alt="Sponsor">
+        </div>
+        <div class="sponsor-card animate-on-scroll delay-4">
+          <img src="https://via.placeholder.com/200x100/f8f9fa/adb5bd?text=Sponsor+4" alt="Sponsor">
+        </div>
+      </div>
+      
+      <div class="text-center">
+        <a href="pages/sponsors.html" class="btn btn-outline">
+          Become a Sponsor
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">Northeastern Climbing</div>
+          <p class="footer__text">
+            The official competitive rock climbing team at Northeastern University. Competition-driven, community-built since 2014.
+          </p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/northeasternclimbing/" target="_blank" rel="noopener" class="footer__social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/northeasternclimbing/" target="_blank" rel="noopener" class="footer__social-link" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+              </svg>
+            </a>
+            <a href="mailto:northeasternclimbing@gmail.com" class="footer__social-link" aria-label="Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <nav class="footer__links">
+            <a href="pages/about.html" class="footer__link">About Us</a>
+            <a href="pages/members.html" class="footer__link">Team Members</a>
+            <a href="pages/results.html" class="footer__link">Competition Results</a>
+            <a href="pages/tryouts.html" class="footer__link">Tryouts</a>
+          </nav>
+        </div>
+        
+        <div>
+          <h4 class="footer__heading">Resources</h4>
+          <nav class="footer__links">
+            <a href="pages/faq.html" class="footer__link">FAQ</a>
+            <a href="pages/sponsors.html" class="footer__link">Sponsors</a>
+            <a href="pages/donate.html" class="footer__link">Donate</a>
+            <a href="pages/contact.html" class="footer__link">Contact</a>
+          </nav>
+        </div>
+        
+        <div>
+          <h4 class="footer__heading">More</h4>
+          <nav class="footer__links">
+            <a href="pages/diversity.html" class="footer__link">Diversity & Inclusion</a>
+            <a href="pages/alumni.html" class="footer__link">Alumni</a>
+            <a href="https://northeasternclimbing.com/" target="_blank" rel="noopener" class="footer__link">Recreational Club</a>
+            <a href="https://usaclimbing.org/compete/collegiate-series/" target="_blank" rel="noopener" class="footer__link">USA Climbing</a>
+          </nav>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © <span data-year></span> Northeastern Climbing Team • Boston, MA • Go Huskies! 🐾
+        </p>
+        <div>
+          <a href="https://neu.edu" target="_blank" rel="noopener" class="footer__link">Northeastern University</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top btn btn-primary btn-icon" aria-label="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+
+  <style>
+    /* Page Loader Styles */
+    .page-loader {
+      position: fixed;
+      inset: 0;
+      background: var(--nu-black);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+    
+    .page-loader.loaded {
+      opacity: 0;
+      visibility: hidden;
+    }
+    
+    .page-loader__spinner {
+      width: 50px;
+      height: 50px;
+      border: 3px solid var(--nu-gray-800);
+      border-top-color: var(--nu-red);
+      border-radius: 50%;
+      animation: rotate 1s linear infinite;
+    }
+    
+    /* Scroll to Top */
+    .scroll-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: all var(--transition-normal);
+      z-index: 100;
+    }
+    
+    .scroll-top.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    
+    /* Ripple Effect */
+    .btn {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .ripple {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      transform: scale(0);
+      animation: ripple 0.6s linear;
+      pointer-events: none;
+    }
+    
+    @keyframes ripple {
+      to {
+        transform: scale(4);
+        opacity: 0;
+      }
+    }
+  </style>
 </body>
 </html>
