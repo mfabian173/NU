@@ -219,11 +219,11 @@ a:hover {
   place-items: center;
   font-weight: 700;
   font-size: 1.2rem;
-  transition: transform var(--transition-bounce);
+  transition: none;
 }
 
 .nav__brand:hover .nav__brand-logo {
-  transform: rotate(360deg);
+  transform: none;
 }
 
 .nav__menu {
@@ -387,11 +387,11 @@ a:hover {
   object-fit: cover;
   opacity: 0.4;
   filter: grayscale(30%);
-  transition: transform 20s ease;
+  transition: none;
 }
 
 .hero:hover .hero__bg-image {
-  transform: scale(1.05);
+  transform: none;
 }
 
 .hero__bg-overlay {
@@ -429,8 +429,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   margin-bottom: var(--space-2xl);
-  animation: fadeInUp 0.8s ease forwards, pulse 2s ease-in-out infinite;
-  animation-delay: 0s, 0.8s;
+  animation: none;
 }
 
 .hero__logo-placeholder span {
