@@ -187,23 +187,7 @@
     });
   }
   
-  // ==========================================================================
-  // PARALLAX EFFECT
-  // ==========================================================================
-  
-  function initParallax() {
-    const parallaxElements = document.querySelectorAll('.hero__bg-image');
-    
-    window.addEventListener('scroll', () => {
-      const scrolled = window.pageYOffset;
-      
-      parallaxElements.forEach(el => {
-        const rate = scrolled * 0.3;
-        el.style.transform = `translateY(${rate}px) scale(1.1)`;
-      });
-    });
-  }
-  
+
   // ==========================================================================
   // CURSOR EFFECTS
   // ==========================================================================
@@ -514,7 +498,6 @@
     initAccordion();
     initScrollAnimations();
     initSmoothScroll();
-    initParallax();
     initLazyLoading();
     initForms();
     initTabs();
