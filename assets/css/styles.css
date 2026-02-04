@@ -1,9 +1,11 @@
 :root {
+  /* Brand Colors */
   --nu-black: #000000;
   --nu-white: #FFFFFF;
   --nu-red: #C8102F;
   --nu-gold: #A4804A;
   
+  /* Extended Palette */
   --nu-red-dark: #9B0C24;
   --nu-red-light: #E8334A;
   --nu-gold-dark: #8A6B3D;
@@ -18,9 +20,11 @@
   --nu-gray-800: #343A40;
   --nu-gray-900: #212529;
   
+  /* Typography */
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-display: 'Bebas Neue', 'Impact', sans-serif;
   
+  /* Spacing */
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
   --space-md: 1rem;
@@ -407,6 +411,33 @@ a:hover {
   text-align: center;
   max-width: 900px;
   padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Giant Circular Logo Placeholder */
+.hero__logo-placeholder {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 3px dashed rgba(255, 255, 255, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-2xl);
+  animation: fadeInUp 0.8s ease forwards, pulse 2s ease-in-out infinite;
+  animation-delay: 0s, 0.8s;
+}
+
+.hero__logo-placeholder span {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
 }
 
 .hero__badge {
@@ -1261,6 +1292,16 @@ a:hover {
     padding: var(--space-lg);
   }
   
+  .hero__logo-placeholder {
+    width: 200px;
+    height: 200px;
+    margin-bottom: var(--space-xl);
+  }
+  
+  .hero__logo-placeholder span {
+    font-size: 1.125rem;
+  }
+  
   .hero__actions {
     flex-direction: column;
     width: 100%;
@@ -1973,4 +2014,3 @@ a:hover {
     font-size: 1.0625rem;
   }
 }
-
